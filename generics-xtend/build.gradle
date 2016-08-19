@@ -1,0 +1,25 @@
+buildscript {
+    dependencies {
+        classpath 'org.xtext:xtext-gradle-plugin:1.0.2'
+    }
+    repositories {
+        jcenter()
+    }
+}
+
+plugins {
+    id "org.xtext.xtend" version "1.0.0"
+}
+apply plugin: 'org.xtext.xtend'
+
+ext.xtendVersion = '2.10.0'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: 'org.eclipse.xtend', name: 'org.eclipse.xtend.lib', version: xtendVersion
+    compile group: 'org.eclipse.xtext', name: 'org.eclipse.xtext.xbase.lib', version: xtendVersion
+    compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.10.0'
+}
