@@ -5,8 +5,8 @@ import hu.bme.mit.generics.operations.ShapeOperation;
 
 public class RectangleBundle<TRectangle extends Rectangle> extends ShapeBundle<TRectangle> {
 
-	public RectangleBundle(TRectangle shape, ShapeOperation<TRectangle> factory) {
-		super(shape, factory);
+	public RectangleBundle(TRectangle shape, ShapeOperation<TRectangle> operation) {
+		super(shape, operation);
 	}
 	
 }

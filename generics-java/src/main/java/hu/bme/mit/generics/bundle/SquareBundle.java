@@ -5,9 +5,9 @@ import hu.bme.mit.generics.operations.GenericRectangleOperation;
 
 public class SquareBundle extends RectangleBundle<Square> {
 
-	//public SquareBundle(Square shape, RectangleOperation factory) {
-	public SquareBundle(Square shape, GenericRectangleOperation<Square> factory) {
-		super(shape, factory);
+	//public SquareBundle(Square shape, RectangleOperation operation) {
+	public SquareBundle(Square shape, GenericRectangleOperation<Square> operation) {
+		super(shape, operation);
 	}
 	
 }

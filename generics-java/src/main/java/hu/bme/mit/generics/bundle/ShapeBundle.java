@@ -6,11 +6,11 @@ import hu.bme.mit.generics.operations.ShapeOperation;
 public abstract class ShapeBundle<TShape extends Shape> {
 
 	private TShape shape;
-	private ShapeOperation<TShape> factory;
+	private ShapeOperation<TShape> operation;
 
-	public ShapeBundle(TShape shape, ShapeOperation<TShape> factory) {
+	public ShapeBundle(TShape shape, ShapeOperation<TShape> operation) {
 		this.shape = shape;
-		this.factory = factory;
+		this.operation = operation;
 	}
 	
 }
